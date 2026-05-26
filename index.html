@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivo.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <section id="login-section" class="container-auth">
@@ -29,20 +31,21 @@
             <br>
             <form id="login-form">
                 <input type="text" id="username" placeholder="Seu nome de usuário..." required autocomplete="username">
-                <input type="password" id="password" placeholder="Sua senha..." required autocomplete="current-password">
+                <input type="password" id="password" placeholder="Sua senha..." required
+                    autocomplete="current-password">
                 <button type="submit" id="btn-auth">Entrar</button>
             </form>
         </div>
     </section>
 
     <section id="chat-section" class="app-layout" style="display: none;">
-        
+
         <aside class="sidebar">
             <div class="sidebar-header">
                 <span>ZapChat</span>
                 <button id="btn-settings-open" class="icon-btn" type="button" title="Configurações">⚙️</button>
             </div>
-            
+
             <div class="chat-tabs">
                 <button id="tab-groups" class="active">Grupos</button>
                 <button id="tab-dms">DMs</button>
@@ -56,7 +59,7 @@
                 <h3 id="current-chat-title">Selecione uma conversa</h3>
             </div>
             <div id="chat-messages" class="messages-container"></div>
-            
+
             <form id="chat-form" class="input-area" style="display: none;">
                 <input type="text" id="chat-input" placeholder="Digite uma mensagem..." autocomplete="off" required>
                 <button type="submit" id="btn-chat-submit">Enviar</button>
@@ -69,7 +72,7 @@
         <div class="modal-card">
             <h3>Configurações da Conta</h3>
             <div class="modal-body">
-                
+
                 <div class="setting-item">
                     <label for="theme-select">Tema do Aplicativo:</label>
                     <select id="theme-select">
@@ -90,7 +93,8 @@
 
                 <div class="setting-item">
                     <label style="color: #e74c3c;">Zona de Perigo:</label>
-                    <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">A exclusão removerá permanentemente seu acesso e registro do sistema.</p>
+                    <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">A exclusão removerá
+                        permanentemente seu acesso e registro do sistema.</p>
                     <button type="button" id="btn-delete-account" class="danger-btn">Excluir Minha Conta</button>
                 </div>
 
@@ -103,4 +107,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
