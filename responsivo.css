@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+    body {
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    #login-section.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--bg-body);
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+
+    .app-layout {
+        flex-direction: column;
+        border-radius: 0;
+        border: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 35vh;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .chat-wrapper {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .msg {
+        max-width: 85%;
+    }
+
+    .input-area {
+        padding: 10px;
+    }
+}
